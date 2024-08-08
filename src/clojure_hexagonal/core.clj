@@ -10,8 +10,7 @@
     (swap! storage conj user-data)
     user-data)
   (findAll [this]
-    @storage)
-  )
+    @storage))
 
 (defn create-in-memory-repo []
   (->InMemoryUserRepo (atom [])))
